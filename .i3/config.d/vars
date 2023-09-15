@@ -1,0 +1,6 @@
+# Set mod key (Mod1=<Alt>, Mod4=<Super>)
+set $mod Mod4  
+set $BROWSER brave
+set $PRIVATE_BROWSER brave --incognito
+set $FILE_MANAGER nemo 
+
