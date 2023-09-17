@@ -3,13 +3,13 @@
 #
 
 # i3 shorcuts for reload
-bindsym $mod+Shift+c exec --no-startup-id ~/.i3/create_config.sh && i3-msg reload
-bindsym $mod+Shift+r exec --no-startup-id ~/.i3/create_config.sh && i3-msg restart
+bindsym $mod+Shift+c exec --no-startup-id ~/.config/i3/create_config.sh && i3-msg reload
+bindsym $mod+Shift+r exec --no-startup-id ~/.config/i3/create_config.sh && i3-msg restart
 
 # Edit i3 config
-bindsym $mod+Ctrl+i exec code ~/.i3
+bindsym $mod+Ctrl+i exec code ~/.config/i3
 
-bindsym $mod+Shift+space exec --no-startup-id ~/.i3/toggle_floating.sh && ~/.i3/create_config.sh && i3-msg restart
+bindsym $mod+Shift+space exec --no-startup-id ~/.config/i3/toggle_floating.sh && ~/.config/i3/create_config.sh && i3-msg restart
 
 # start a terminal
 bindsym $mod+Return exec xfce4-terminal

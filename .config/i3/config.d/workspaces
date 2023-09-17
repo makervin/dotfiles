@@ -15,6 +15,16 @@ set $ws6 6
 set $ws7 7
 set $ws8 8
 
+workspace $ws1 output $SCREEN_1
+workspace $ws2 output $SCREEN_2
+workspace $ws3 output $SCREEN_1
+workspace $ws4 output $SCREEN_2
+workspace $ws5 output $SCREEN_1
+workspace $ws6 output $SCREEN_2
+workspace $ws7 output $SCREEN_1
+workspace $ws8 output $SCREEN_2
+
+
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
