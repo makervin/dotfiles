@@ -117,7 +117,7 @@ bindsym $mod+Shift+c exec --no-startup-id ~/.config/i3/create_config.sh && i3-ms
 bindsym $mod+Shift+r exec --no-startup-id ~/.config/i3/create_config.sh && i3-msg restart
 
 # Edit i3 config
-bindsym $mod+Ctrl+i exec code ~/.config/i3
+bindsym $mod+Ctrl+i exec code ~/.config/config.code-workspace
 
 bindsym $mod+Shift+space exec --no-startup-id ~/.config/i3/toggle_floating.sh && ~/.config/i3/create_config.sh && i3-msg restart
 
@@ -229,11 +229,14 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
-	bindsym l exec --no-startup-id xflock4
-	bindsym s exec --no-startup-id xfce4-session-logout --suspend
-	bindsym r exec --no-startup-id xfce4-session-logout --reboot --fast
-	bindsym e exec --no-startup-id xfce4-session-logout --logout --fast
-	bindsym Shift+s exec --no-startup-id xfce4-session-logout --halt --fast
+  bindsym l exec --no-startup-id i3lock -c "#000000"
+  bindsym s exec --no-startup-id i3lock -c "#000000" && systemctl suspend
+  bindsym Shift+s exec --no-startup-id shutdown now
+	# bindsym l exec --no-startup-id xflock4
+	# bindsym s exec --no-startup-id xfce4-session-logout --suspend
+	# bindsym r exec --no-startup-id xfce4-session-logout --reboot --fast
+	# bindsym e exec --no-startup-id xfce4-session-logout --logout --fast
+	# bindsym Shift+s exec --no-startup-id xfce4-session-logout --halt --fast
   # bindsym l exec --no-startup-id i3exit lock, mode "default"
 	# bindsym s exec --no-startup-id i3exit suspend, mode "default"
 	# bindsym u exec --no-startup-id i3exit switch_user, mode "default"

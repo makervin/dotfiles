@@ -1,7 +1,0 @@
-# Set mod key (Mod1=<Alt>, Mod4=<Super>)
-set $mod Mod4  
-set $BROWSER firefox
-set $PRIVATE_BROWSER firefox --private-window
-set $FILE_MANAGER nemo 
-set $SCREEN_1 HDMI-A-0
-set $SCREEN_2 DisplayPort-2
