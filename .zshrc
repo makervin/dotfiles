@@ -78,6 +78,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-alias sps="sudo pacman -S "
+alias zrc="nvim ~/.zshrc"
+alias nvrc="cd ~/.config/nvim && nvim init.lua"
 
 PS1='%B%F{red}[%f%F{yellow}%n%f%F{green}@%f%F{blue}%m%f%F{magenta}%~%f%F{red}]%f$%b '
+
