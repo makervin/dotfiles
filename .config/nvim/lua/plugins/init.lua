@@ -27,6 +27,7 @@ return {
         "css-lsp",
         "prettier",
         "clangd",
+        "rust-analyzer",
       },
     },
   },

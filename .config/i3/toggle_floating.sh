@@ -1,5 +1,5 @@
 #!/bin/bash
-windows_config="$HOME/.i3/config.d/windows"
+windows_config="$HOME/.i3/config.d/windows.conf"
 window_class=$(xdotool getwindowfocus getwindowclassname)
 window_setting='for_window [class="'$window_class'"] floating enable' 
 

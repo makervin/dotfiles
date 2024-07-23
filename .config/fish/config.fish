@@ -19,4 +19,9 @@ function fish_prompt
 	set_color normal
 end
 
-set -U fish_user_abbreviations 'pc=sudo pacman'
+set -Ux SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
+
+abbr -a sps 'sudo pacman -S'
+abbr -a nvrc nvim ~/.config/nvim/init.lua \"+cd ~/.config/nvim\"
+
+abbr -a gs 'git status'
