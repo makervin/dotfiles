@@ -81,5 +81,8 @@ source $ZSH/oh-my-zsh.sh
 alias zrc="nvim ~/.zshrc"
 alias nvrc="cd ~/.config/nvim && nvim init.lua"
 
+path=("$HOME/.bin" $path)
+export PATH
+
 PS1='%B%F{red}[%f%F{yellow}%n%f%F{green}@%f%F{blue}%m%f%F{magenta}%~%f%F{red}]%f$%b '
 
